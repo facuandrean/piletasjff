@@ -112,11 +112,14 @@
             <div class="skewed-reverse"></div>
         </section>
 
-        <section class="contact-us" id="contact-us">
+        <div id="contact-us"></div>
+
+        <section class="contact-us" >
             <h2 class="title-section">¡Contáctanos!</h2>
 
             <div class="write-us">
                 <p>Puedes escribirnos...</p>
+                <!-- <form class="contact-form"> Esto es para el form de php nomas. -->
                 <form class="contact-form">
                     <input type="text" name="name" placeholder="Nombre Completo" title="Nombre sólo acepta letras y espacios en blanco." pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
 
@@ -136,12 +139,55 @@
                     <div class="contact-form-response none">
                         <p>Los datos han sido enviados</p>
                     </div>
-
                 </form>
             </div>
+
             <div class="contact">
-                <p>... O puedes llamarnos!</p>
+                <p>... O puedes contactarnos!</p>
+                <div class="contact-info">
+                    <div class="info">
+                        <div class="info-img">
+                            <img src="assets/call-outline.svg" alt="Teléfono">
+                        </div>
+                        <div class="info-text">
+                            <h3>Teléfonos</h3>
+                            <p> Un número de teléfono </p>
+                            <p> U otro </p>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="info-img">
+                            <img src="assets/logo-whatsapp.svg" alt="Whatsapp">
+                        </div>
+                        <div class="info-text">
+                            <h3>Whatsapp</h3>
+                            <p> Un número de whatsapp </p>
+                            <p> U otro </p>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="info-img">
+                            <img src="assets/mail-outline.svg" alt="E-mail">
+                        </div>
+                        <div class="info-text">
+                            <h3>E-mail</h3>
+                            <p>Un e-mail</p>
+                            <p>U otro</p>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="info-img">
+                            <img src="assets/time-outline.svg" alt="Horario">
+                        </div>
+                        <div class="info-text">
+                            <h3>Horarios</h3>
+                            <p>Un horario</p>
+                            <p>U otro</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </section>
 
     </main>

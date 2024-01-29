@@ -1,4 +1,4 @@
-export function form() {
+export function formFS() {
     const d = document;
     
     const $form = d.querySelector('.contact-form'), $inputs = d.querySelectorAll('.contact-form [required]');
@@ -39,34 +39,31 @@ export function form() {
 
     document.addEventListener('submit', (e) => {
         e.preventDefault();
-        alert("Enviando formulario.");
 
         const $loader = d.querySelector('.contact-form-loader'), $response = d.querySelector('.contact-form-response');
 
         $loader.classList.remove('none');
 
-        fetch("https://facuandrean.github.io/piletasjff/php/send_mail.php", {
+        fetch("https://formsubmit.co/ajax/facundoandrean22@gmail.com", {
             method: "POST",
             body: new FormData(e.target)
         })
         .then(res => res.ok ? res.json() : Promise.reject(res))
         .then(json => { 
-            console.log(json);
             $loader.classList.add('none');
             $response.classList.remove('none');
-            $response.innerHTML = `<p>${json.message}</p>`;
+            $response.innerHTML = `<p>El mensaje ha sido enviado con éxito</p>`;
             $form.reset(); 
         })
         .catch(err => {
-            console.log(err);
             let message = err.statusText || 'Ocurrió un error al enviar, intenta nuevamente.';
             $response.innerHTML = `<p>Error: ${err.status}: ${message}</p>`;
         })
         .finally(() => setTimeout(() => {
+            $loader.classList.add('none')
             $response.classList.add('none');
             $response.innerHTML = "";
-        }, 3000))
+        }, 5000))
 
     })
-
 }

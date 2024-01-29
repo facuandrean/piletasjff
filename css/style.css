@@ -399,8 +399,10 @@ p {
 .contact-us {
     width: 100%;
     min-height: 100vh;
-    padding: 1rem;
+    /* padding: 1rem; */
     font-family: var(--primary-title-font);
+
+    padding-top: 10vh;
 }
 
 .contact-us h2 {
@@ -412,15 +414,18 @@ p {
     width: 90%;
     margin: 1rem auto;
     font-size: 1.15rem;
+    padding: 0 1rem;
+    font-weight: 700;
 }
 
 .contact-form {
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto 5rem auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    padding: 1rem;
 }
 
 .contact-form > * {
@@ -438,6 +443,7 @@ p {
     font-size: 1rem;
     font-weight: bold;
     text-align: center;
+    color: #4caf50;
 }
 
 .contact-form input,
@@ -482,7 +488,6 @@ p {
 .contact-form-loader {
     text-align: center;
     width: 100%;
-    border: 1px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -499,6 +504,67 @@ p {
         visibility: visible;
         opacity: 1;
     }
+}
+
+.contact-info {
+    width: 100%;
+    height: auto;
+    /* border: 1px solid red; */
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    place-content: center;
+    gap: 1rem;
+}
+
+.contact-info .info {
+    margin: 0 auto;
+    width: 70%;
+    /* border: 1px solid red; */
+    height: 15vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
+    border-radius: .5rem;
+}
+
+.contact-info .info-img {
+    width: 30%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info .info-img img {
+    height: 3rem;
+    width: 3rem;
+}
+
+.contact-info .info-text {
+    width: 60%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-info .info-text h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: .5rem 0rem .5rem 0rem;
+}
+
+.contact-info .info-text p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
 }
 
 /* Utilities */
