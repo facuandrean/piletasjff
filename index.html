@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@200;300;400;700;900&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/489d45fb25.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/logo2.svg" alt="logo">
+            </a>
+        </div>
+
+        <nav class="nav-mobile">
+            <button class="hamburger hamburger--collapse" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <ul class="ul">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about-us">Nosotros</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#contact-us">Contáctanos</a></li>
+            </ul>
+        </nav>
+
+        <nav class="nav-desktop none">
+            <ul class="ul">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="slider" id="home">
+            <div class="slider-slides">
+                <div class="slider-slide active">
+                    <!-- <h2>Contenido Slide 1</h2> -->
+                    <img src="assets/fern_leaves_plants_shadows_blur_bokeh_background_4k_hd_nature.jpg" alt="">
+                </div>
+                <div class="slider-slide">
+                    <!-- <h2>Contenido Slide 2</h2> -->
+                    <img src="assets/wallpaperflare.com_wallpaper (10).jpg" alt="">
+                </div>
+                <div class="slider-slide">
+                    <!-- <h2>Contenido Slide 3</h2> -->
+                    <img src="assets/wallpaperflare.com_wallpaper (9).jpg" alt="">
+                </div>
+                <div class="slider-slide">
+                    <!-- <h2>Contenido Slide 4</h2> -->
+                    <img src="assets/wallpaperflare.com_wallpaper (8).jpg" alt="">
+                </div>
+            </div>
+            <div class="slider-btns">
+                <a href="" class="prev">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+                <a href="" class="next">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+
+        <section class="about-us" id="about-us">
+            <div class="about-us-content">
+                <h2 class="title-section">Quiénes somos</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae labore, delectus ullam commodi quis cupiditate optio. Saepe quidem id earum quo possimus, totam dolor corrupti, aut, voluptatem dolore nemo sunt?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quasi laboriosam ipsum, maxime quae alias blanditiis. Corporis commodi, earum, sed consequatur aut alias facere dolore dolores maxime eligendi dicta tempora.</p>
+            </div>
+
+            <div class="skewed"></div>
+        </section>
+
+        <section class="services" id="services">
+            <h2 class="title-section">Nuestros servicios</h2>
+            <div class="services-container">
+                <div class="service">
+                    <h3>Titulo servicio</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti esse eum magnam ad facere quidem minus sequi, ipsam expedita impedit. Laudantium qui perspiciatis consequuntur impedit fugit facilis. Ea, ipsa fugiat.</p>
+                    <div class="service-background"></div>
+                </div>
+                <div class="service">
+                    <h3>Titulo servicio</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti esse eum magnam ad facere quidem minus sequi, ipsam expedita impedit. Laudantium qui perspiciatis consequuntur impedit fugit facilis. Ea, ipsa fugiat.</p>
+                    <div class="service-background"></div>
+                </div>
+                <div class="service">
+                    <h3>Titulo servicio</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti esse eum magnam ad facere quidem minus sequi, ipsam expedita impedit. Laudantium qui perspiciatis consequuntur impedit fugit facilis. Ea, ipsa fugiat.</p>
+                    <div class="service-background"></div>
+                </div>
+            </div>
+
+            <!-- Si no me gusta como queda, comentar esta línea y quitar position relative de services y eliminar los estilos de skewed-reverse -->
+            <div class="skewed-reverse"></div>
+        </section>
+
+        <section class="contact-us" id="contact-us">
+            <h2 class="title-section">¡Contáctanos!</h2>
+
+            <div class="write-us">
+                <p>Puedes escribirnos...</p>
+                <form class="contact-form" action="php/send_mail.php">
+                    <input type="text" name="name" placeholder="Nombre Completo" title="Nombre sólo acepta letras y espacios en blanco." pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+
+                    <input type="email" name="email" placeholder="E-mail" title="E-mail incorrecto. Debe ser de la forma: example@example.example" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+
+                    <input type="tel" name="tel" placeholder="Teléfono" title="Solo se aceptan números." pattern="^[0-9]+$" required>
+
+                    <input type="text" name="subject" placeholder="Asunto" title="El asunto es requerido" required>
+
+                    <textarea name="comments" cols="20" rows="5" placeholder="Mensaje" data-pattern="^.{1,255}$" title="Tu comentario no debe exceder los 255 caracteres." required></textarea>
+
+                    <input type="submit" value="Enviar">
+                    
+                    <div class="contact-form-loader none">
+                        <img src="assets/spinning-circles.svg" alt="Cargando">
+                    </div>
+                    <div class="contact-form-response none">
+                        <p>Los datos han sido enviados</p>
+                    </div>
+
+                </form>
+            </div>
+            <div class="contact">
+                <p>... O puedes llamarnos!</p>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>
