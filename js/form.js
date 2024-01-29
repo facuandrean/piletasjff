@@ -48,7 +48,7 @@ export function form() {
 
             $loader.classList.remove('none');
 
-            fetch("https://facuandrean.github.io/piletasjff/", {
+            fetch("https://facuandrean.github.io/piletasjff/php/send_mail.php", {
                 method: "POST",
                 body: new FormData(e.target)
             })
