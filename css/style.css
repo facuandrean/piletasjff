@@ -58,7 +58,7 @@ img, video, svg {
 body {
     margin: 0;
     min-height: 100dvh;
-    min-width: 375px;
+    min-width: 320px;
     overflow-x: hidden;
 }
 
@@ -105,7 +105,7 @@ p {
 
 .header .logo img {
     width: 100%;
-    height: 75%;
+    max-height: 75%;
 }
 
 .nav-mobile {
@@ -165,7 +165,7 @@ p {
     position: relative;
     top: 0vh;
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
 }
 
 .slider {
@@ -251,7 +251,7 @@ p {
 
 .about-us {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
 
     display: flex;
     justify-content: center;
@@ -329,7 +329,7 @@ p {
     display: grid;
     grid-template-columns: repeat(1, 100%);
     place-content: center;
-    gap: 1rem;
+    gap: 2.5rem;
 }
 
 .service {
@@ -347,6 +347,8 @@ p {
     position: relative;
     
     background-image: url("/assets/wallpaperflare.com_wallpaper (9).jpg");
+
+    transition: transform .5s ease, opacity .5s ease;
 }
 
 .service h3 {
@@ -430,6 +432,10 @@ p {
     margin: .5rem auto;
     display: block;
     width: 100%;
+}
+
+.contact-form input[type="submit"]{
+    transition: opacity .5s ease;
 }
 
 .contact-form textarea {
@@ -592,7 +598,7 @@ p {
 .footer p {
     margin: 0;
     padding: .5rem;
-    
+
     text-align: center;
     color: var(--gray-color);
     font-family: var(--primary-font);
@@ -613,6 +619,297 @@ p {
     background-color: transparent;
 }
 
-
 /* Media queries */
 
+@media (640px <= width < 1024px) {
+
+    .header .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .header .logo a {
+        max-height: 80%;
+    }
+    
+    .header .logo img {
+        max-height: 90%;
+    }
+    
+    .nav-mobile ul li {
+        padding: 1.5rem;
+    }
+    
+    .nav-mobile ul a {    
+        font-size: 1.6rem;
+    }
+    
+    .slider {
+        height: 95vh;
+    }
+    
+    .about-us-content {
+        height: auto;
+    }
+    
+    .title-section {
+        font-size: 3rem;
+    }
+    
+    .about-us-content p {
+        font-size: 1.8rem;
+    }
+    
+    .services-container {
+        grid-template-columns: repeat(1, 80%);
+        gap: 5rem;
+    }
+    
+    .service {
+        height: 50vh;
+    }
+    
+    .service h3 {
+        font-size: 2rem;
+    }
+    
+    .service p {
+        font-size: 1.6rem;
+    }
+    
+    .contact-us p {
+        font-size: 1.8rem;
+    }
+    
+    .contact-form > * {
+        padding: 1.5rem;
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 1.6rem;
+    }
+    
+    .contact-info {
+        grid-template-columns: repeat(2, 50%);
+        gap: 0rem;
+    }
+    
+    .contact-info .info {
+        width: 90%;
+        height: 20vh;
+    }
+    
+    .contact-info .info-img img {
+        height: 4rem;
+        width: 4rem;
+    }
+    
+    .contact-info .info-text h3 {
+        font-size: 1.4rem;
+    }
+    
+    .contact-info .info-text p {
+        font-size: 1.5rem;
+    }
+    
+    .footer img {
+        width: 10rem;
+        height: 10rem;
+    }
+    
+    .footer p {
+        padding: 1rem;
+        font-size: 1.3rem;
+    }
+
+}
+
+@media (1024px <= width) {
+
+    .header .logo {
+        width: 30%;
+    }
+
+    .nav-desktop {
+        width: 50%;
+        max-width: 800px;
+        height: 100%;
+    }
+
+    .nav-desktop ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .nav-desktop ul li {
+        /* padding: 1rem; */
+        height: 100%;
+        /* display: flex;
+        align-items: center; */
+    }
+
+    .nav-desktop ul a {
+        font-size: 1.5rem;
+        color: var(--black-color);
+        font-family: var(--primary-font);
+        text-decoration: none;
+        font-weight: 700;
+        
+        display: flex;
+        align-items: center;
+        height: 100%;
+        border-bottom: 5px solid transparent;
+        
+        transition: border-bottom .5s ease;
+    }
+
+    .nav-desktop ul a.section-active {
+        border-bottom: 5px solid var(--black-color); /* Cambia el color del borde al activar la clase section-active */
+    }
+
+    .slider {
+        height: 100vh;
+    }
+    
+    .about-us-content {
+        max-width: 800px;
+    }
+    
+    .skewed {    
+        transform: skewY(3deg);
+    }
+
+    .services {
+        min-height: 100dvh;
+    }
+       
+    .services-container {
+        max-width: 1280px;
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .service {
+        min-height: 300px;
+        max-height: 500px;
+
+    }
+    
+    .service:hover {
+        opacity: .8;
+        transform: translateY(-20px);
+    }
+    
+    .skewed-reverse {
+        transform: skewY(-3deg);
+    }
+
+    .contact-us {
+        margin: 0 auto;
+        min-height: auto;
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        grid-template-areas: 
+        "title title"
+        "form info";
+
+        max-width: 1024px;
+    }
+
+    .contact-us h2 {
+        grid-area: title;
+    }
+
+    .write-us {
+        width: 100%;
+        margin: 0 auto;
+        grid-area: form;
+        padding: 1rem;
+    }
+
+    .contact {
+        width: 100%;
+        margin: 0 auto;
+        grid-area: info;
+        padding: 1rem;
+    }
+    
+    .contact-form {
+        width: 90%;
+    }
+
+    .contact-form input[type="submit"]:hover {
+        opacity: .7;
+    } 
+    
+    .contact-info {
+        width: 100%;
+        padding: 0;
+    
+        grid-area: info;
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "tel whats"
+        "email  hs";
+        place-content: center;
+        gap: 1rem;
+    }
+    
+    .contact-info .info {
+        margin: 0 auto;
+        padding: 2rem 0rem;
+        width: 100%;
+        height: auto;
+
+        justify-content: center;
+
+        border: 1px solid var(--black-color);
+    }
+
+    .contact-info .info:nth-child(1) {
+        grid-area: tel;
+
+        width: 100%;
+        height: 80%;
+        margin-top: 1.5rem;
+    }
+
+    .contact-info .info:nth-child(2) {
+        grid-area: whats;
+
+        width: 100%;
+        height: 80%;
+        margin-top: 1.5rem;
+    }
+
+    .contact-info .info:nth-child(3) {
+        grid-area: email;
+
+        width: 100%;
+        height: 80%;
+    }
+
+    .contact-info .info:nth-child(4) {
+        grid-area: hs;
+
+        width: 100%;
+        height: 80%;
+    }
+
+}

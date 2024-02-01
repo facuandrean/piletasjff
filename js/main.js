@@ -4,6 +4,8 @@ import { formPhp } from './form-php.js';
 import { formFS } from './form-FS.js';
 import { header } from './header.js';
 import { scroll } from './scroll.js';
+import { nav } from './nav.js';
+import { scrollSpy } from './scroll-spy.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     header();
@@ -12,4 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // formPhp();
     formFS();
     scroll();
+    nav();
+    scrollSpy();
 })
