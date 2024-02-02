@@ -13,17 +13,11 @@ export function scrollSpy() {
         });
     
         navbarLinks.forEach(link => {
-
-            
-            
             link.classList.remove("section-active");
             if (link.getAttribute("href").slice(1) === current) {
-                console.log(link);
                 link.classList.add('section-active');
-                // link.children[0].classList.add("section-active");
             } else {
                 link.classList.remove('section-active');
-                // link.children[0].classList.remove("section-active");
             }
         });
     });

@@ -7,33 +7,6 @@ export function slider() {
     let time = 8000;
     let touchStartX;
     let touchEndX;
-    
-    // let isPointerDown = false; // Variable para rastrear si el puntero está presionado
-
-    // Eventos para pausar y reanudar el autoSlide al mantener presionado el puntero
-    // $slides.forEach(($slide) => {
-    //     $slide.addEventListener('pointerdown', () => {
-    //         isPointerDown = true;
-    //     });
-
-    //     $slide.addEventListener('pointerup', () => {
-    //         isPointerDown = false;
-    //     });
-    // });
-
-    // function autoSlide() {
-    //     if (!isPointerDown) {
-    //         $slides[i].classList.remove('active');
-    //         i++;
-
-    //         if (i >= $slides.length) {
-    //             i = 0;
-    //         }
-
-    //         $slides[i].classList.add('active');
-    //         resetTimer();
-    //     }
-    // }
 
     function autoSlide() {
         

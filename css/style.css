@@ -769,11 +769,16 @@ p {
         height: 100%;
         border-bottom: 5px solid transparent;
         
-        transition: border-bottom .5s ease;
+        transition: border-bottom .5s ease, opacity .5s ease;
     }
 
+    
     .nav-desktop ul a.section-active {
         border-bottom: 5px solid var(--black-color); /* Cambia el color del borde al activar la clase section-active */
+    }
+
+    .nav-desktop ul a:hover {
+        opacity: .6;
     }
 
     .slider {
