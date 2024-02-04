@@ -49,6 +49,18 @@ html {
     scroll-behavior: smooth;
 }
 
+html::-webkit-scrollbar {
+    width: 8px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--third-alpha-color);
+}
+
+html::-webkit-scrollbar-track {
+    background: var(--black-color);
+}
+
 img, video, svg {
     display: block;
     height: auto;
@@ -166,6 +178,8 @@ p {
     top: 0vh;
     width: 100%;
     min-height: 100vh;
+
+    padding-bottom: 15vh;
 }
 
 .slider {
@@ -527,7 +541,7 @@ p {
 
 .contact-info .info {
     margin: 0 auto;
-    width: 70%;
+    width: 80%;
     height: 20vh;
     box-shadow: 0.25rem 0.25rem 1rem var(--box-shadow);
     border-radius: .5rem;
@@ -539,7 +553,7 @@ p {
 }
 
 .contact-info .info-img {
-    width: 30%;
+    width: 20%;
     height: 100%;
 
     display: flex;
@@ -553,7 +567,7 @@ p {
 }
 
 .contact-info .info-text {
-    width: 60%;
+    width: 70%;
     height: 100%;
 
     display: flex;
@@ -577,8 +591,22 @@ p {
     margin: 0;
 }
 
+.contact-info .info-text a,
+.contact-info .info-text small {
+    color:  var(--text-color);
+    text-align: center;
+    text-decoration: none;
+
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+
+    margin: 0;
+}
+
+
 .footer {
-    margin-top: 15vh;
+    margin-top: 0vh;
     width: 100%;
     height: auto;
     background-color: var(--third-color);
@@ -710,8 +738,9 @@ p {
         font-size: 1.4rem;
     }
     
-    .contact-info .info-text p {
-        font-size: 1.5rem;
+    .contact-info .info-text small,
+    .contact-info .info-text a {
+        font-size: 1.25rem;
     }
     
     .footer img {
@@ -751,10 +780,7 @@ p {
     }
 
     .nav-desktop ul li {
-        /* padding: 1rem; */
         height: 100%;
-        /* display: flex;
-        align-items: center; */
     }
 
     .nav-desktop ul a {
@@ -772,13 +798,13 @@ p {
         transition: border-bottom .5s ease, opacity .5s ease;
     }
 
-    
     .nav-desktop ul a.section-active {
-        border-bottom: 5px solid var(--black-color); /* Cambia el color del borde al activar la clase section-active */
+        border-bottom: 5px solid var(--black-color);
     }
 
     .nav-desktop ul a:hover {
-        opacity: .6;
+        opacity: .8;
+        border-bottom: 5px solid var(--black-color)
     }
 
     .slider {
