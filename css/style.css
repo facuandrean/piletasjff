@@ -386,6 +386,8 @@ p {
 
 .service {
     width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
     /* min-height: 400px; */
     min-height: 300px;
     max-height: 500px;
@@ -568,7 +570,8 @@ p {
 }
 
 .contact-us h2 {
-    margin-top: var(--header-height);
+    margin-top: 100px;
+    margin-bottom: 70px;
 }
 
 .contact-us p {
@@ -803,7 +806,7 @@ p {
 /* Media queries */
 
 @media (640px <= width < 1024px) {
-
+/* 
     .header .logo {
         display: flex;
         justify-content: center;
@@ -920,7 +923,7 @@ p {
     .footer p {
         padding: 1rem;
         font-size: 1.3rem;
-    }
+    } */
 
 }
 
@@ -995,36 +998,55 @@ p {
     .slider {
         height: 100vh;
     }
+
+    .presentation {
+        height: 350px;
+    }
+        
+    .skewed {    
+        transform: skewY(3deg);
+    }
     
     .about-us-content {
         max-width: 800px;
     }
 
-    .services .title-section {
-        margin-bottom: 0;
+    .about-us-content p {
+        font-size: 1.5rem;
     }
-    
-    .skewed {    
-        transform: skewY(3deg);
+
+    .services .title-section {
+        margin-bottom: 70px;
     }
 
     .services {
-        min-height: 100dvh;
+        min-height: 100vh;
+        /* border: 1px solid red;   */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
        
     .services-container {
         max-width: 1280px;
-        height: 400px;
-        
+        height: auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
     .service {
-        min-height: 300px;
-        max-height: 500px;
+        min-height: auto;
+        max-height: auto;
         height: 80%;
+        padding: 1rem;
+
+        /* border: 1px solid red; */
+    }
+
+    .service p {
+        font-size: 1.5rem;
     }
     
     .service:hover {
@@ -1037,13 +1059,11 @@ p {
 
     .jobs {
         width: 100%;
-        min-height: 100vh;
-        padding: 1rem;
-    
-        background-color: var(--white-color);
-    
-        position: relative;
-        z-index: 990;
+        max-width: 1280px;
+    }
+
+    .jobs h2 {
+        margin-top: 150px;
     }
 
     .jobs-container-mobile {
@@ -1053,7 +1073,7 @@ p {
     .jobs-container-desktop {
         max-width: 1280px;
         height: auto;
-        margin: 5vh auto 0 auto;
+        margin: 0 auto;
         
         display: flex;
         flex-direction: column;
@@ -1062,19 +1082,12 @@ p {
     }
 
     .job {
-        width: 100%;
-        height: auto;
         min-height: auto;
-        padding: 1rem;
-
-        margin-bottom: 5vh;
-
-        box-shadow: 0.25rem 0.25rem 1rem var(--box-shadow);
-        border-radius: .5rem;
+        max-height: 650px;
+        max-width: 100%;
+        margin-bottom: 50px;
         
-        display: flex;
         justify-content: space-between;
-        align-items: center;
         flex-direction: row;
 
         /* background: rgb(255,186,1);
@@ -1124,7 +1137,6 @@ p {
         opacity: .9;
     }
 
-    
     .job h3 {
         font-size: 1.5rem;
         font-weight: 700;
@@ -1137,6 +1149,10 @@ p {
         font-family: var(--primary-font);
         color: var(--text-color);
         text-align: center;
+    }
+
+    .job p b {
+        color: var(--black-color);
     }
     
     .job-background {
@@ -1153,8 +1169,9 @@ p {
     }
 
     .contact-us {
-        margin: 0 auto;
+        max-width: 1120px;
         min-height: auto;
+        padding: 0;
         
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1162,30 +1179,29 @@ p {
         grid-template-areas: 
         "title title"
         "form info";
-
-        max-width: 1024px;
     }
 
     .contact-us h2 {
+        margin-top: 150px;
         grid-area: title;
     }
 
     .write-us {
+        grid-area: form;
         width: 100%;
         margin: 0 auto;
-        grid-area: form;
         padding: 1rem;
     }
 
     .contact {
+        grid-area: info;
         width: 100%;
         margin: 0 auto;
-        grid-area: info;
         padding: 1rem;
     }
     
     .contact-form {
-        width: 90%;
+        width: 100%;
     }
 
     .contact-form input[type="submit"]:hover {
@@ -1203,18 +1219,18 @@ p {
         grid-template-rows: 1fr 1fr;
         grid-template-areas: 
         "tel whats"
-        "email  hs";
+        "email hs";
         place-content: center;
         gap: 1rem;
     }
-    
+
     .contact-info .info {
         margin: 0 auto;
         padding: 2rem 0rem;
         width: 100%;
         height: auto;
 
-        justify-content: center;
+        justify-content: space-evenly;
 
         border: 1px solid var(--black-color);
     }
@@ -1247,6 +1263,10 @@ p {
 
         width: 100%;
         height: 80%;
+    }
+
+    .contact-info .info-img {
+        width: 20%;
     }
 
 }
