@@ -273,7 +273,8 @@ p {
 
 .presentation {
     padding-top: 200px;
-    height: 300px;
+    margin-bottom: 5rem;
+    height: 350px;
     width: 100%;
 
     display: flex;
@@ -322,8 +323,7 @@ p {
 
 .about-us {
     width: 100%;
-    min-height: auto;
-    padding-top: 150px;
+    min-height: 650px;
     margin-bottom: 150px;
 
     display: flex;
@@ -335,24 +335,14 @@ p {
     z-index: 990;
 }
 
+.about-us h2 {
+    margin-bottom: 70px;
+}
+
 .about-us-content {
     width: 80%;
     margin: 0 auto;
     padding: 1rem;
-}
-
-.title-section {
-    font-size: 2rem;
-    text-align: center;
-    font-family: var(--primary-font);
-    font-weight: 900;
-    color: var(--black-color);
-
-    border-bottom: 5px solid var(--first-color);
-    min-width: 10ch;
-    max-width: 15ch;
-    margin: 0 auto 50px;
-    padding: .5rem;
 }
 
 .about-us-content p {
@@ -365,7 +355,7 @@ p {
 
 .services {
     width: 100%;
-    min-height: 100vh;
+    min-height: auto;
     padding: 1rem;
     padding-bottom: 150px;
 
@@ -395,11 +385,9 @@ p {
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
-    /* min-height: 400px; */
     min-height: 300px;
     max-height: 500px;
     padding: 1rem;
-    /* box-shadow: 0.25rem 0.25rem 1rem var(--box-shadow); */
     border-radius: .5rem;
     
     display: flex;
@@ -806,6 +794,20 @@ p {
     background-color: transparent;
 }
 
+.title-section {
+    font-size: 2rem;
+    text-align: center;
+    font-family: var(--primary-font);
+    font-weight: 900;
+    color: var(--black-color);
+
+    border-bottom: 5px solid var(--first-color);
+    min-width: 10ch;
+    max-width: 15ch;
+    margin: 0 auto 50px;
+    padding: .5rem;
+}
+
 /* Media queries */
 
 @media (640px <= width < 1024px) {
@@ -981,7 +983,7 @@ p {
 
     .header .logo a {
         width: 50%;
-    
+        
         justify-content: space-between;
     }
 
@@ -1053,6 +1055,11 @@ p {
         transform: skewY(3deg);
     }
     
+    .about-us {
+        height: auto;
+        margin-bottom: 200px
+    }
+
     .about-us-content {
         max-width: 800px;
     }
@@ -1061,16 +1068,17 @@ p {
         font-size: 1.5rem;
     }
 
-    .services .title-section {
+    .services h2 {
         margin-bottom: 70px;
     }
 
     .services {
-        min-height: 100vh;
+        min-height: auto;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        padding-bottom: 200px
     }
        
     .services-container {
