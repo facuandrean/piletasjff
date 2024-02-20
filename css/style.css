@@ -39,7 +39,6 @@
 * {
     margin: 0;
     padding: 0;
-    min-width: 0;
     font: inherit; 
 }
 
@@ -336,6 +335,7 @@ p {
 }
 
 .about-us h2 {
+    margin-top: 100px;
     margin-bottom: 70px;
 }
 
@@ -446,6 +446,14 @@ p {
     transform-origin: top left;
 }
 
+.carousel-item img {
+    height: 550px;
+
+    border-radius: .5rem;
+    object-fit: cover;
+    object-position: 50% 0%;
+}
+
 .jobs {
     width: 100%;
     max-width: 500px;
@@ -470,14 +478,18 @@ p {
 }
 
 .jobs-container-mobile {
+    border: 1px solid red;
+
     width: 95%;
     height: auto;
     margin: 0 auto;
 
-    display: grid;
+    display: flex;
+
+    /* display: grid;
     grid-template-columns: repeat(1, 100%);
     place-content: center;
-    gap: 2.5rem;
+    gap: 2.5rem; */
 }
 
 .job {
@@ -555,7 +567,6 @@ p {
     margin: 0 auto;
 
     min-height: 100vh;
-    padding-top: 5vh;
 
     font-family: var(--primary-font);
 }
@@ -593,10 +604,6 @@ p {
     width: 100%;
 }
 
-.contact-form input[type="submit"]{
-    transition: opacity .5s ease;
-}
-
 .contact-form textarea {
     resize: none;
 }
@@ -614,13 +621,15 @@ p {
 }
 
 .contact-form input[type="submit"] {
-    width: 50%;
+    width: 16ch;
     outline: none;
     border: 1px solid var(--black-color);
     background-color: var(--first-color);
 
     font-weight: 700;
     cursor: pointer;
+
+    transition: opacity .5s ease;
 }
 
 .contact-form *::placeholder {
@@ -1058,6 +1067,10 @@ p {
     .about-us {
         height: auto;
         margin-bottom: 200px
+    }
+
+    .about-us h2 {
+        margin-top: 0;
     }
 
     .about-us-content {

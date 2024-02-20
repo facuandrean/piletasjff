@@ -16,7 +16,4 @@ document.addEventListener('DOMContentLoaded', () => {
     scroll();
     nav();
     scrollSpy();
-
-    console.log(innerHeight)
-    console.log(innerWidth)
 })
