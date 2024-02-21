@@ -454,6 +454,18 @@ p {
     object-position: 50% 0%;
 }
 
+.carousel-item h5 {
+    font-size: 2rem;
+    font-family: var(--primary-font);
+    font-weight: 700;
+}
+
+.carousel-item p {
+    font-size: 1.5rem;
+    font-family: var(--primary-font);
+    font-weight: 300;
+}
+
 .jobs {
     width: 100%;
     max-width: 500px;
@@ -473,92 +485,9 @@ p {
     margin-bottom: 70px;
 }
 
-.jobs-container-desktop {
+.jobs-container-desktop,
+.glider {
     display: none;
-}
-
-.jobs-container-mobile {
-    border: 1px solid red;
-
-    width: 95%;
-    height: auto;
-    margin: 0 auto;
-
-    display: flex;
-
-    /* display: grid;
-    grid-template-columns: repeat(1, 100%);
-    place-content: center;
-    gap: 2.5rem; */
-}
-
-.job {
-    width: 100%;
-    min-height: 400px;
-    max-height: 550px;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: .5rem;
-    box-shadow: 0.25rem 0.25rem 1rem var(--box-shadow);
-    border-radius: .5rem;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    
-    position: relative;
-    
-    transition: transform .5s ease, opacity .5s ease;
-
-    text-decoration: none;
-}
-
-.job-img {
-    width: 100%;
-    height: 40%;
-    max-height: 450px;
-}
-
-.job-img img {
-    width: 100%;
-    height: 100%;
-    border-radius: .5rem;
-}
-
-.job-text {
-    width: 100%;
-    height: 60%;
-    padding: .5rem;
-
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-}
-
-.job h3 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    font-family: var(--primary-font);
-    color: var(--black-color);
-    text-align: center;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-}
-
-.job p {
-    font-size: 1.1rem;
-    font-weight: 500;
-    font-family: var(--primary-font);
-    color: var(--text-color);
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.job p b {
-    color: var(--first-color);
-    border-bottom: 5px solid var(--first-color)
 }
 
 .contact-us {
@@ -1122,106 +1051,145 @@ p {
     }
 
     .jobs {
-        width: 100%;
+        min-height: auto;
         max-width: 1280px;
-    }
-
-    .jobs h2 {
-        margin-top: 100px;
     }
 
     .jobs-container-mobile {
         display: none;
     }
 
-    .jobs-container-desktop {
-        max-width: 1280px;
-        height: auto;
-        margin: 0 auto;
-        
+    .glider {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        width: 100%;
+        max-width: 1280px;
     }
 
-    .job {
-        min-height: auto;
-        max-height: 650px;
-        max-width: 100%;
-        margin-bottom: 50px;
+    .jobs-container-desktop {
+        width: 100%;
+        max-width: 1280px;
+        height: auto;
+        margin: 0 auto 2.5rem auto;
         
-        justify-content: space-between;
+        display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
 
-        background-color: var(--gray-color);
+        position: relative;
     }
 
-    .job:hover {
-        transform: translateX(-1rem);
-        opacity: .9;
-    }
+    .glider-prev,
+    .glider-next {
+        position: absolute;
+        top: calc(40%);
+
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
     
-    .job .job-img {
-        width: 50%;
-        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-    }
     
-    .job .job-img img {
-        border-radius: .5rem;
-    }
-    
-    .job .job-text {
-        width: 40%;
-        height: 100%;
-        margin: 0 auto;
-        
-        text-align: center;
-    }
-    
-    .jobs-container-desktop .job:nth-child(odd){
-        flex-direction: row-reverse;
-
-        background-color: var(--gray-color);
-    }
-
-    .jobs-container-desktop .job:nth-child(odd):hover {
-        transform: translateX(1rem);
-        opacity: .9;
-    }
-
-    .job h3 {
+        text-decoration: none;
+        color: var(--black-alpha-color);
         font-size: 1.5rem;
+    
+        transition: all .5s ease;
+    }
+
+    .glider-prev:hover,
+    .glider-next:hover {
+        color: var(--white-color);
+        background-color: var(--black-alpha-second-color);
+    }
+
+    .glider-prev {
+        left: 30px
+    }
+
+    .glider-next {
+        right: 30px
+    }
+    
+    .glider-element {
+        min-height: 450px;
+        max-height: 600px;
+        width: 100%;
+        box-shadow: 0.25rem 0.25rem 1rem var(--box-shadow);
+        border-radius: .5rem;
+
+        text-decoration: none;
+
+        padding: .5rem;
+
+        margin: 0 1rem;
+
+        position: relative;
+    }
+
+    .glider-element .job-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .glider-element .job-img img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        object-position: 50% 50%;
+    
+        border-radius: .5rem;
+        z-index: 998;
+    }
+    
+    .glider-element .job-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+
+        text-align: center;
+        color: black;
+    }
+
+    .glider-element h3 {
+        font-size: 2rem;
         font-weight: 700;
         font-family: var(--primary-font);
     }
     
-    .job p {
-        font-size: 1.1rem;
+    .glider-element p {
+        font-size: 1.4rem;
         font-weight: 500;
         font-family: var(--primary-font);
         color: var(--text-color);
         text-align: center;
     }
 
-    .job p b {
+    .glider-element p b {
         color: var(--black-color);
     }
-    
-    .job-background {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-    
-        background-color: var(--black-alpha-second-color);
-        border-radius: .5rem;
-    
-        opacity: .3;
+
+    .glider-indicators .glider-dot.active {
+        background-color: var(--first-alpha-color);
     }
 
     .contact-us {
