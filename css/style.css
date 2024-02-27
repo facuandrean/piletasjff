@@ -275,7 +275,7 @@ p {
 
     position: relative;
     z-index: 990;
-    padding: 5rem 2rem 10rem 2rem;
+    padding: 5rem 1.5rem 10rem 1.5rem;
 }
 
 .presentation {
@@ -322,7 +322,7 @@ p {
 
 .about-us-text {
     padding: 0rem 1rem;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .about-us-text p {
@@ -332,14 +332,14 @@ p {
     color: var(--text-color);
 }
 
-.about-us-img {
-    padding: 0rem 1rem;
-}
-
 .about-us-img img {
+    min-height: 400px;
     max-height: 500px;
     border-radius: .5rem;
     box-shadow: 0.25rem 0.25rem 1rem var(--box-shadow);
+
+    object-fit: cover;
+    object-position: 50% 0%;
 }
 
 .skewed {
@@ -1194,7 +1194,7 @@ p {
     .glider-element-card {
         border-radius: 20px;
         position: relative;
-        border: 2px solid #c3c6ce;
+        border: 1px solid #c3c6ce;
         transition: 0.5s ease-out;
         overflow: visible;
     }
@@ -1223,9 +1223,7 @@ p {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-/* 
-        background-color: var(--black-alpha-second-color);
-        opacity: .7; */
+
     }
 
     .card-details img {
