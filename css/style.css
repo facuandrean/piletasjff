@@ -52,7 +52,7 @@ html {
     scroll-behavior: smooth;
 }
 
-html::-webkit-scrollbar {
+/* html::-webkit-scrollbar {
     width: 12px;
 }
 
@@ -62,7 +62,7 @@ html::-webkit-scrollbar-thumb {
 
 html::-webkit-scrollbar-track {
     background: var(--black-color);
-}
+} */
 
 img,
 video,
@@ -467,6 +467,10 @@ p {
 .jobs h2 {
     margin-top: 100px;
     margin-bottom: 70px;
+}
+
+.carousel-inner {
+    border-radius: .5rem;
 }
 
 .carousel-item img {
@@ -1139,7 +1143,6 @@ p {
 
     .glider-indicators .glider-dot.active {
         background-color: var(--first-alpha-color);
-        border: 1px solid var(--black-color);
     }
 
     .glider-element-details {
@@ -1190,7 +1193,7 @@ p {
     }
 
     .glider-element:hover {
-        border-color: var(--first-color);
+        border-color: #8b8b8d;
         box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
     }
 

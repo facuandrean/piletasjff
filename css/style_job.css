@@ -211,7 +211,10 @@
     }
     
     .glider-element:hover {
-       transform: scale(0.95);
+       transform: scale(0.975);
+       box-shadow: none;
+       outline: none;
+       border: none;
     }
 
     .btn,
