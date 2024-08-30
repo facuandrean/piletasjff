@@ -473,6 +473,10 @@ p {
     border-radius: .5rem;
 }
 
+.carousel-item {
+    position: relative;
+}
+
 .carousel-item img {
     height: 600px;
     border-radius: .5rem;
@@ -481,14 +485,24 @@ p {
     object-position: 50% 0%;
 }
 
+.carousel-item .carousel-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: .5;
+}
+
 .carousel-item h5 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-family: var(--primary-font);
     font-weight: 700;
 }
 
 .carousel-item p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: var(--primary-font);
     font-weight: 300;
 }
@@ -1123,17 +1137,18 @@ p {
     }
 
     .glider-element h3 {
-        font-size: 2rem;
+        font-size: 1.6rem;
         font-weight: 700;
         font-family: var(--primary-font);
     }
 
     .glider-element p {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         font-weight: 500;
         font-family: var(--primary-font);
         color: var(--text-color);
         text-align: center;
+        margin-bottom: 0
     }
 
     .glider-element p b {

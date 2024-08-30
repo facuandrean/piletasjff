@@ -18,7 +18,7 @@
     width: inherit;
 
     object-fit: cover;
-    object-position: 50% 0%;
+    object-position: 50% 50%;
 }
 
 .hero-image-text {
