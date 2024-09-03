@@ -208,14 +208,25 @@
     
         position: relative;
     
-        transition: transform .5s ease-in-out;
+        transition: all .5s ease-in-out;
     }
     
     .glider-element:hover {
-       transform: scale(0.975);
-       box-shadow: none;
-       outline: none;
-       border: none;
+        transform: scale(0.975);
+        box-shadow: none;
+        outline: none;
+        border: none;
+    }
+
+    .glider-element .job-img img {
+        border-radius: 1rem;
+
+        transition: all .5s ease-in-out;
+    }
+    
+    .glider-element:hover .job-img img {
+        border-radius: 1rem;
+        
     }
 
     .btn,
@@ -302,21 +313,33 @@
         background-color: transparent;
         border: none;
     }
-    
-    .modal-header {
-        border: none
+
+    .modal-body {
+        position: relative;
+        height: auto;
+        overflow: hidden;
     }
-    
-    .modal-header button {
+
+    .modal-body .btn-close {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        color: var(--white-color);
+        font-size: 1.5rem;
+        background-color: #00000099;
+        transition: all .5s ease;
+    }
+
+    .modal-body .btn-close:hover {
         background-color: var(--white-color);
     }
-    
+
     .modal-body img {
         max-width: auto;
         margin: 0 auto;
     
         object-fit: cover;
-        object-position: 50% 0%;
+        object-position: 50% 50%;
     }
     
 }
