@@ -318,6 +318,7 @@
         position: relative;
         height: auto;
         overflow: hidden;
+        padding: 0;
     }
 
     .modal-body .btn-close {
@@ -328,10 +329,12 @@
         font-size: 1.5rem;
         background-color: #00000099;
         transition: all .5s ease;
+        border-radius: 50%;
+        padding: 1rem;
     }
 
     .modal-body .btn-close:hover {
-        background-color: var(--white-color);
+        background-color: var(--gray-color)
     }
 
     .modal-body img {
@@ -339,7 +342,21 @@
         margin: 0 auto;
     
         object-fit: cover;
-        object-position: 50% 50%;
+        object-position: 50% 25%;
+
+        max-width: 1000px;
+        max-height: 600px;
+
+        overflow: hidden;
     }
     
+}
+
+@media (width >= 1400px) {
+    .modal-body img {
+        object-position: 50% 50%;
+
+        max-width: none;
+        max-height: none;
+    }
 }
