@@ -64,8 +64,6 @@ export function btnNav() {
 
         const scrollPosition = window.scrollY;
 
-        console.log($btn.classList.contains('is-active'))
-
         if (scrollPosition === 0 && $btn.classList.contains('is-active')) {
 
             $header.classList.remove('transparent');
