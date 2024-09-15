@@ -275,7 +275,6 @@
     
     .glider-element:hover .job-img img {
         border-radius: 1rem;
-        
     }
 
     .btn,
@@ -330,6 +329,10 @@
     
         text-align: center;
         color: var(--black-color);
+    }
+
+    .glider-element-details-text {
+        padding: 0rem .5rem;
     }
     
     .glider-element h3 {
