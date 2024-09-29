@@ -103,6 +103,7 @@
     padding: 1rem;
     background-color: var(--gray-color);
     padding-bottom: 50px;
+    margin-bottom: 2rem;
 }
 
 .carousel {
@@ -331,10 +332,6 @@
         color: var(--black-color);
     }
 
-    .glider-element-details-text {
-        padding: 0rem .5rem;
-    }
-    
     .glider-element h3 {
         font-size: 2rem;
         font-weight: 700;
