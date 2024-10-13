@@ -2,6 +2,7 @@ export function header() {
 
     const $header = document.querySelector('.header');
     const $navMobile = document.querySelector('.nav-mobile ul');
+    const $headerBlur = document.querySelector('.header-blur');
 
     // Agrega la clase 'transparent' al cargar la página
     $header.classList.add('transparent');
@@ -14,6 +15,7 @@ export function header() {
         $header.style.backgroundColor = '#ffba01';
         $navMobile.classList.remove('transparent');
         $navMobile.style.backgroundColor = '#ffba01d7';
+        $headerBlur.style.opacity = "0";
     } 
 
     // Función para cambiar el estilo del encabezado al desplazarse
@@ -29,11 +31,13 @@ export function header() {
             $header.style.backgroundColor = '#ffba01';
             $navMobile.classList.remove('transparent');
             $navMobile.style.backgroundColor = '#ffba01d7';
+            $headerBlur.style.opacity = "0";
         } else {
             $header.classList.add('transparent');
             $header.style.backgroundColor = 'transparent';
             $navMobile.classList.add('transparent');
             $navMobile.style.backgroundColor = 'transparent';
+            $headerBlur.style.opacity = "1";
         }
 
     });

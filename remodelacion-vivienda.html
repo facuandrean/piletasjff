@@ -37,6 +37,7 @@
 <body>
 
     <header class="header">
+        <div class="header-blur"></div>
         <div class="header-container">
             <div class="logo">
                 <a href="index.html">
@@ -108,10 +109,6 @@
                     </div>
                     <div class="carousel-item">
                         <div class="loader"></div>
-                        <img data-src="/assets/remodelacion-vivienda/before/construction-img-005.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                    </div>
-                    <div class="carousel-item">
-                        <div class="loader"></div>
                         <img data-src="/assets/remodelacion-vivienda/before/construction-img-006.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
                     </div>
                     <div class="carousel-item">
@@ -132,23 +129,11 @@
                     </div>
                     <div class="carousel-item">
                         <div class="loader"></div>
-                        <img data-src="/assets/remodelacion-vivienda/before/construction-img-011.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                    </div>
-                    <div class="carousel-item">
-                        <div class="loader"></div>
                         <img data-src="/assets/remodelacion-vivienda/before/construction-img-012.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
                     </div>
                     <div class="carousel-item">
                         <div class="loader"></div>
                         <img data-src="/assets/remodelacion-vivienda/before/construction-img-013.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                    </div>
-                    <div class="carousel-item">
-                        <div class="loader"></div>
-                        <img data-src="/assets/remodelacion-vivienda/before/construction-img-014.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                    </div>
-                    <div class="carousel-item">
-                        <div class="loader"></div>
-                        <img data-src="/assets/remodelacion-vivienda/before/construction-img-015.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
                     </div>
                     <div class="carousel-item">
                         <div class="loader"></div>
@@ -177,10 +162,6 @@
                     <div class="carousel-item">
                         <div class="loader"></div>
                         <img data-src="/assets/remodelacion-vivienda/before/construction-img-022.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                    </div>
-                    <div class="carousel-item">
-                        <div class="loader"></div>
-                        <img data-src="/assets/remodelacion-vivienda/before/construction-img-023.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
                     </div>
                     <div class="carousel-item">
                         <div class="loader"></div>
@@ -321,10 +302,6 @@
                     </div>
                     <div class="carousel-item">
                         <div class="loader"></div>
-                        <img data-src="/assets/remodelacion-vivienda/after/construction-img-005.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                    </div>
-                    <div class="carousel-item">
-                        <div class="loader"></div>
                         <img data-src="/assets/remodelacion-vivienda/after/construction-img-006.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
                     </div>
                     <div class="carousel-item">
@@ -345,23 +322,11 @@
                     </div>
                     <div class="carousel-item">
                         <div class="loader"></div>
-                        <img data-src="/assets/remodelacion-vivienda/after/construction-img-011.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                    </div>
-                    <div class="carousel-item">
-                        <div class="loader"></div>
                         <img data-src="/assets/remodelacion-vivienda/after/construction-img-012.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
                     </div>
                     <div class="carousel-item">
                         <div class="loader"></div>
                         <img data-src="/assets/remodelacion-vivienda/after/construction-img-013.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                    </div>
-                    <div class="carousel-item">
-                        <div class="loader"></div>
-                        <img data-src="/assets/remodelacion-vivienda/after/construction-img-014.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                    </div>
-                    <div class="carousel-item">
-                        <div class="loader"></div>
-                        <img data-src="/assets/remodelacion-vivienda/after/construction-img-015.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
                     </div>
                     <div class="carousel-item">
                         <div class="loader"></div>
@@ -390,10 +355,6 @@
                     <div class="carousel-item">
                         <div class="loader"></div>
                         <img data-src="/assets/remodelacion-vivienda/after/construction-img-022.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                    </div>
-                    <div class="carousel-item">
-                        <div class="loader"></div>
-                        <img data-src="/assets/remodelacion-vivienda/after/construction-img-023.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
                     </div>
                     <div class="carousel-item">
                         <div class="loader"></div>
@@ -451,9 +412,9 @@
               </div>
         </section>  
 
-        <!-- <section class="fotographies fotographies-desktop">
+        <section class="fotographies fotographies-desktop">
             <h2>Antes...</h2>
-            <div class="glider">
+            <div class="glider" id="glider-before">
                 <div class="glider-container jobs-container-desktop">
                     <button aria-label="Anterior" class="glider-prev">
                         <i class="fa-solid fa-arrow-left"></i>
@@ -465,91 +426,308 @@
                                 <img data-src="/assets/remodelacion-vivienda/before/construction-img-001.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
                             </div>
                         </a>
-
+                        
                         <a href="#second-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
                             <div class="job-img">
                                 <div class="loader"></div>
                                 <img data-src="/assets/remodelacion-vivienda/before/construction-img-002.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
                             </div>
                         </a>
-
+                        
                         <a href="#third-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
                             <div class="job-img">
                                 <div class="loader"></div>
                                 <img data-src="/assets/remodelacion-vivienda/before/construction-img-003.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
                             </div>
                         </a>
-
+                        
                         <a href="#fourth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
                             <div class="job-img">
                                 <div class="loader"></div>
                                 <img data-src="/assets/remodelacion-vivienda/before/construction-img-004.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
                             </div>
                         </a>
-
+                        
                         <a href="#fifth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
                             <div class="job-img">
                                 <div class="loader"></div>
                                 <img data-src="/assets/remodelacion-vivienda/before/construction-img-005.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
                             </div>
                         </a>
-
-
+                        
                         <a href="#sixth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
                             <div class="job-img">
                                 <div class="loader"></div>
                                 <img data-src="/assets/remodelacion-vivienda/before/construction-img-006.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
                             </div>
                         </a>
-
+                        
                         <a href="#seventh-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
                             <div class="job-img">
                                 <div class="loader"></div>
                                 <img data-src="/assets/remodelacion-vivienda/before/construction-img-007.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
                             </div>
                         </a>
-
+                        
                         <a href="#eighth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
                             <div class="job-img">
                                 <div class="loader"></div>
                                 <img data-src="/assets/remodelacion-vivienda/before/construction-img-008.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
                             </div>
                         </a>
-
+                        
                         <a href="#ninth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
                             <div class="job-img">
                                 <div class="loader"></div>
                                 <img data-src="/assets/remodelacion-vivienda/before/construction-img-009.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
                             </div>
                         </a>
-
+                        
                         <a href="#tenth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
                             <div class="job-img">
                                 <div class="loader"></div>
                                 <img data-src="/assets/remodelacion-vivienda/before/construction-img-010.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
                             </div>
                         </a>
-
+                        
                         <a href="#eleventh-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
                             <div class="job-img">
                                 <div class="loader"></div>
                                 <img data-src="/assets/remodelacion-vivienda/before/construction-img-011.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
                             </div>
                         </a>
-
+                        
                         <a href="#twelfth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
                             <div class="job-img">
                                 <div class="loader"></div>
                                 <img data-src="/assets/remodelacion-vivienda/before/construction-img-012.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
                             </div>
                         </a>
-
+                        
                         <a href="#thirteenth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
                             <div class="job-img">
                                 <div class="loader"></div>
                                 <img data-src="/assets/remodelacion-vivienda/before/construction-img-013.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
                             </div>
                         </a>
+                        
+                        <a href="#fourteenth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
+                            <div class="job-img">
+                                <div class="loader"></div>
+                                <img data-src="/assets/remodelacion-vivienda/before/construction-img-014.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
+                            </div>
+                        </a>
+                        
+                        <a href="#fifteenth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
+                            <div class="job-img">
+                                <div class="loader"></div>
+                                <img data-src="/assets/remodelacion-vivienda/before/construction-img-015.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
+                            </div>
+                        </a>
+                        
+                        <a href="#sixteenth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
+                            <div class="job-img">
+                                <div class="loader"></div>
+                                <img data-src="/assets/remodelacion-vivienda/before/construction-img-016.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
+                            </div>
+                        </a>
+                        
+                        <a href="#seventeenth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
+                            <div class="job-img">
+                                <div class="loader"></div>
+                                <img data-src="/assets/remodelacion-vivienda/before/construction-img-017.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
+                            </div>
+                        </a>
+                        
+                        <a href="#eighteenth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
+                            <div class="job-img">
+                                <div class="loader"></div>
+                                <img data-src="/assets/remodelacion-vivienda/before/construction-img-018.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
+                            </div>
+                        </a>
+                        
+                        <a href="#nineteenth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
+                            <div class="job-img">
+                                <div class="loader"></div>
+                                <img data-src="/assets/remodelacion-vivienda/before/construction-img-019.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
+                            </div>
+                        </a>
+                        
+                        <a href="#twentieth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
+                            <div class="job-img">
+                                <div class="loader"></div>
+                                <img data-src="/assets/remodelacion-vivienda/before/construction-img-020.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
+                            </div>
+                        </a>
+                        
+                        <a href="#twentyfirst-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
+                            <div class="job-img">
+                                <div class="loader"></div>
+                                <img data-src="/assets/remodelacion-vivienda/before/construction-img-021.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
+                            </div>
+                        </a>
+                        
+                        <a href="#twentysecond-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
+                            <div class="job-img">
+                                <div class="loader"></div>
+                                <img data-src="/assets/remodelacion-vivienda/before/construction-img-022.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
+                            </div>
+                        </a>
+                        
+                        <a href="#twentythird-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
+                            <div class="job-img">
+                                <div class="loader"></div>
+                                <img data-src="/assets/remodelacion-vivienda/before/construction-img-023.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
+                            </div>
+                        </a>
+                        
+                        <a href="#twentyfourth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
+                            <div class="job-img">
+                                <div class="loader"></div>
+                                <img data-src="/assets/remodelacion-vivienda/before/construction-img-024.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
+                            </div>
+                        </a>
+                        
+                        <a href="#twentyfifth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
+                            <div class="job-img">
+                                <div class="loader"></div>
+                                <img data-src="/assets/remodelacion-vivienda/before/construction-img-025.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
+                            </div>
+                        </a>
+                        
+                        <a href="#twentysixth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
+                            <div class="job-img">
+                                <div class="loader"></div>
+                                <img data-src="/assets/remodelacion-vivienda/before/construction-img-026.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
+                            </div>
+                        </a>
+                        
+                        <a href="#twentyseventh-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
+                            <div class="job-img">
+                                <div class="loader"></div>
+                                <img data-src="/assets/remodelacion-vivienda/before/construction-img-027.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
+                            </div>
+                        </a>
+                        
+                        <a href="#twentyeighth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
+                            <div class="job-img">
+                                <div class="loader"></div>
+                                <img data-src="/assets/remodelacion-vivienda/before/construction-img-028.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
+                            </div>
+                        </a>
+                        
+                        <a href="#twentyninth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
+                            <div class="job-img">
+                                <div class="loader"></div>
+                                <img data-src="/assets/remodelacion-vivienda/before/construction-img-029.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
+                            </div>
+                        </a>
+                        
+                        <a href="#thirtieth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
+                            <div class="job-img">
+                                <div class="loader"></div>
+                                <img data-src="/assets/remodelacion-vivienda/before/construction-img-030.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
+                            </div>
+                        </a>
+                        
+                        <a href="#thirtyfirst-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
+                            <div class="job-img">
+                                <div class="loader"></div>
+                                <img data-src="/assets/remodelacion-vivienda/before/construction-img-031.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
+                            </div>
+                        </a>
+                        
+                        <a href="#thirtysecond-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
+                            <div class="job-img">
+                                <div class="loader"></div>
+                                <img data-src="/assets/remodelacion-vivienda/before/construction-img-032.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
+                            </div>
+                        </a>
+                        
+                        <a href="#thirtythird-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
+                            <div class="job-img">
+                                <div class="loader"></div>
+                                <img data-src="/assets/remodelacion-vivienda/before/construction-img-033.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
+                            </div>
+                        </a>
+                        
+                        <a href="#thirtyfourth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
+                            <div class="job-img">
+                                <div class="loader"></div>
+                                <img data-src="/assets/remodelacion-vivienda/before/construction-img-034.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
+                            </div>
+                        </a>
+                        
+                        <a href="#thirtyfifth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
+                            <div class="job-img">
+                                <div class="loader"></div>
+                                <img data-src="/assets/remodelacion-vivienda/before/construction-img-035.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
+                            </div>
+                        </a>
+                        
+                        <a href="#thirtysixth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
+                            <div class="job-img">
+                                <div class="loader"></div>
+                                <img data-src="/assets/remodelacion-vivienda/before/construction-img-036.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
+                            </div>
+                        </a>
+                        
+                        <a href="#thirtyseventh-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
+                            <div class="job-img">
+                                <div class="loader"></div>
+                                <img data-src="/assets/remodelacion-vivienda/before/construction-img-037.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
+                            </div>
+                        </a>
+                        
+                        <a href="#thirtyeighth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
+                            <div class="job-img">
+                                <div class="loader"></div>
+                                <img data-src="/assets/remodelacion-vivienda/before/construction-img-038.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
+                            </div>
+                        </a>
+                        
+                        <a href="#thirtyninth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
+                            <div class="job-img">
+                                <div class="loader"></div>
+                                <img data-src="/assets/remodelacion-vivienda/before/construction-img-039.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
+                            </div>
+                        </a>
+                        
+                        <a href="#fortieth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
+                            <div class="job-img">
+                                <div class="loader"></div>
+                                <img data-src="/assets/remodelacion-vivienda/before/construction-img-040.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
+                            </div>
+                        </a>
+                        
+                        <a href="#fortyfirst-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
+                            <div class="job-img">
+                                <div class="loader"></div>
+                                <img data-src="/assets/remodelacion-vivienda/before/construction-img-041.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
+                            </div>
+                        </a>
+                        
+                        <a href="#fortysecond-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
+                            <div class="job-img">
+                                <div class="loader"></div>
+                                <img data-src="/assets/remodelacion-vivienda/before/construction-img-042.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
+                            </div>
+                        </a>
+                        
+                        <a href="#fortythird-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
+                            <div class="job-img">
+                                <div class="loader"></div>
+                                <img data-src="/assets/remodelacion-vivienda/before/construction-img-043.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
+                            </div>
+                        </a>
+                        
+                        <a href="#fortyfourth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
+                            <div class="job-img">
+                                <div class="loader"></div>
+                                <img data-src="/assets/remodelacion-vivienda/before/construction-img-044.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
+                            </div>
+                        </a>
+                                          
                     </div>
                     <button aria-label="Siguiente" class="glider-next">
                         <i class="fa-solid fa-arrow-right"></i>
@@ -557,7 +735,6 @@
                 </div>
                 <div role="tablist" class="glider-indicators"></div>
             </div>
-
             <div class="modal fade modal-lg" id="first-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
@@ -570,6 +747,7 @@
                     </div>
                 </div>
             </div>
+            
             <div class="modal fade modal-lg" id="second-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
@@ -582,6 +760,7 @@
                     </div>
                 </div>
             </div>
+            
             <div class="modal fade modal-lg" id="third-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
@@ -589,11 +768,12 @@
                             <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
                                 <i class="fa-solid fa-x"></i>
                             </button>
-                            <img src="/assets/remodelacion-vivienda/before/construction-img-003.avif" class="d-block w-100" alt="Construcción" loading="lazy">
+                            <img src="/assets/remodelacion-vivienda/before/construction-img-003.avif" class="d-block w-100" alt="Construcción">
                         </div>
                     </div>
                 </div>
             </div>
+            
             <div class="modal fade modal-lg" id="fourth-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
@@ -601,11 +781,12 @@
                             <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
                                 <i class="fa-solid fa-x"></i>
                             </button>
-                            <img src="/assets/remodelacion-vivienda/before/construction-img-004.avif" class="d-block w-100" alt="Construcción" loading="lazy">
+                            <img src="/assets/remodelacion-vivienda/before/construction-img-004.avif" class="d-block w-100" alt="Construcción">
                         </div>
                     </div>
                 </div>
             </div>
+            
             <div class="modal fade modal-lg" id="fifth-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
@@ -613,11 +794,12 @@
                             <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
                                 <i class="fa-solid fa-x"></i>
                             </button>
-                            <img src="/assets/remodelacion-vivienda/before/construction-img-005.avif" class="d-block w-100" alt="Construcción" loading="lazy">
+                            <img src="/assets/remodelacion-vivienda/before/construction-img-005.avif" class="d-block w-100" alt="Construcción">
                         </div>
                     </div>
                 </div>
             </div>
+            
             <div class="modal fade modal-lg" id="sixth-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
@@ -625,11 +807,12 @@
                             <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
                                 <i class="fa-solid fa-x"></i>
                             </button>
-                            <img src="/assets/remodelacion-vivienda/before/construction-img-006.avif" class="d-block w-100" alt="Construcción" loading="lazy">
+                            <img src="/assets/remodelacion-vivienda/before/construction-img-006.avif" class="d-block w-100" alt="Construcción">
                         </div>
                     </div>
                 </div>
             </div>
+            
             <div class="modal fade modal-lg" id="seventh-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
@@ -637,11 +820,12 @@
                             <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
                                 <i class="fa-solid fa-x"></i>
                             </button>
-                            <img src="/assets/remodelacion-vivienda/before/construction-img-007.avif" class="d-block w-100" alt="Construcción" loading="lazy">
+                            <img src="/assets/remodelacion-vivienda/before/construction-img-007.avif" class="d-block w-100" alt="Construcción">
                         </div>
                     </div>
                 </div>
             </div>
+            
             <div class="modal fade modal-lg" id="eighth-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
@@ -649,11 +833,12 @@
                             <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
                                 <i class="fa-solid fa-x"></i>
                             </button>
-                            <img src="/assets/remodelacion-vivienda/before/construction-img-008.avif" class="d-block w-100" alt="Construcción" loading="lazy">
+                            <img src="/assets/remodelacion-vivienda/before/construction-img-008.avif" class="d-block w-100" alt="Construcción">
                         </div>
                     </div>
                 </div>
             </div>
+            
             <div class="modal fade modal-lg" id="ninth-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
@@ -661,11 +846,12 @@
                             <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
                                 <i class="fa-solid fa-x"></i>
                             </button>
-                            <img src="/assets/remodelacion-vivienda/before/construction-img-009.avif" class="d-block w-100" alt="Construcción" loading="lazy">
+                            <img src="/assets/remodelacion-vivienda/before/construction-img-009.avif" class="d-block w-100" alt="Construcción">
                         </div>
                     </div>
                 </div>
             </div>
+            
             <div class="modal fade modal-lg" id="tenth-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
@@ -673,11 +859,12 @@
                             <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
                                 <i class="fa-solid fa-x"></i>
                             </button>
-                            <img src="/assets/remodelacion-vivienda/before/construction-img-010.avif" class="d-block w-100" alt="Construcción" loading="lazy">
+                            <img src="/assets/remodelacion-vivienda/before/construction-img-010.avif" class="d-block w-100" alt="Construcción">
                         </div>
                     </div>
                 </div>
             </div>
+            
             <div class="modal fade modal-lg" id="eleventh-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
@@ -685,11 +872,12 @@
                             <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
                                 <i class="fa-solid fa-x"></i>
                             </button>
-                            <img src="/assets/remodelacion-vivienda/before/construction-img-011.avif" class="d-block w-100" alt="Construcción" loading="lazy">
+                            <img src="/assets/remodelacion-vivienda/before/construction-img-011.avif" class="d-block w-100" alt="Construcción">
                         </div>
                     </div>
                 </div>
             </div>
+            
             <div class="modal fade modal-lg" id="twelfth-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
@@ -697,264 +885,12 @@
                             <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
                                 <i class="fa-solid fa-x"></i>
                             </button>
-                            <img src="/assets/remodelacion-vivienda/before/construction-img-012.avif" class="d-block w-100" alt="Construcción" loading="lazy">
+                            <img src="/assets/remodelacion-vivienda/before/construction-img-012.avif" class="d-block w-100" alt="Construcción">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="modal fade modal-lg" id="thirteenth-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
-                                <i class="fa-solid fa-x"></i>
-                            </button>
-                            <img src="/assets/remodelacion-vivienda/before/construction-img-013.avif" class="d-block w-100" alt="Construcción" loading="lazy">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
-        <!-- <section class="fotographies fotographies-desktop">
-            <h2>En proceso de remodelación...</h2>
-            <div class="glider">
-                <div class="glider-container jobs-container-desktop">
-                    <button aria-label="Anterior" class="glider-prev">
-                        <i class="fa-solid fa-arrow-left"></i>
-                    </button>
-                    <div class="glider-list">
-                        <a href="#fourthteen-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
-                            <div class="job-img">
-                                <div class="loader"></div>
-                                <img data-src="/assets/remodelacion-vivienda/before/construction-img-001.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                            </div>
-                        </a>
-
-                        <a href="#second-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
-                            <div class="job-img">
-                                <div class="loader"></div>
-                                <img data-src="/assets/remodelacion-vivienda/before/construction-img-002.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                            </div>
-                        </a>
-
-                        <a href="#third-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
-                            <div class="job-img">
-                                <div class="loader"></div>
-                                <img data-src="/assets/remodelacion-vivienda/before/construction-img-003.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                            </div>
-                        </a>
-
-                        <a href="#fourth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
-                            <div class="job-img">
-                                <div class="loader"></div>
-                                <img data-src="/assets/remodelacion-vivienda/before/construction-img-004.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                            </div>
-                        </a>
-
-                        <a href="#fifth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
-                            <div class="job-img">
-                                <div class="loader"></div>
-                                <img data-src="/assets/remodelacion-vivienda/before/construction-img-005.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                            </div>
-                        </a>
-
-
-                        <a href="#sixth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
-                            <div class="job-img">
-                                <div class="loader"></div>
-                                <img data-src="/assets/remodelacion-vivienda/before/construction-img-006.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                            </div>
-                        </a>
-
-                        <a href="#seventh-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
-                            <div class="job-img">
-                                <div class="loader"></div>
-                                <img data-src="/assets/remodelacion-vivienda/before/construction-img-007.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                            </div>
-                        </a>
-
-                        <a href="#eighth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
-                            <div class="job-img">
-                                <div class="loader"></div>
-                                <img data-src="/assets/remodelacion-vivienda/before/construction-img-008.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                            </div>
-                        </a>
-
-                        <a href="#ninth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
-                            <div class="job-img">
-                                <div class="loader"></div>
-                                <img data-src="/assets/remodelacion-vivienda/before/construction-img-009.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                            </div>
-                        </a>
-
-                        <a href="#tenth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
-                            <div class="job-img">
-                                <div class="loader"></div>
-                                <img data-src="/assets/remodelacion-vivienda/before/construction-img-010.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                            </div>
-                        </a>
-
-                        <a href="#eleventh-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
-                            <div class="job-img">
-                                <div class="loader"></div>
-                                <img data-src="/assets/remodelacion-vivienda/before/construction-img-011.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                            </div>
-                        </a>
-
-                        <a href="#twelfth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
-                            <div class="job-img">
-                                <div class="loader"></div>
-                                <img data-src="/assets/remodelacion-vivienda/before/construction-img-012.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                            </div>
-                        </a>
-
-                        <a href="#thirteenth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
-                            <div class="job-img">
-                                <div class="loader"></div>
-                                <img data-src="/assets/remodelacion-vivienda/before/construction-img-013.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                            </div>
-                        </a>
-                    </div>
-                    <button aria-label="Siguiente" class="glider-next">
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </button>
-                </div>
-                <div role="tablist" class="glider-indicators"></div>
-            </div>
-
-            <div class="modal fade modal-lg" id="fourthteen-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
-                                <i class="fa-solid fa-x"></i>
-                            </button>
-                            <img src="/assets/remodelacion-vivienda/before/construction-img-001.avif" class="d-block w-100" alt="Construcción">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade modal-lg" id="second-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
-                                <i class="fa-solid fa-x"></i>
-                            </button>
-                            <img src="/assets/remodelacion-vivienda/before/construction-img-002.avif" class="d-block w-100" alt="Construcción">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade modal-lg" id="third-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
-                                <i class="fa-solid fa-x"></i>
-                            </button>
-                            <img src="/assets/remodelacion-vivienda/before/construction-img-003.avif" class="d-block w-100" alt="Construcción" loading="lazy">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade modal-lg" id="fourth-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
-                                <i class="fa-solid fa-x"></i>
-                            </button>
-                            <img src="/assets/remodelacion-vivienda/before/construction-img-004.avif" class="d-block w-100" alt="Construcción" loading="lazy">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade modal-lg" id="fifth-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
-                                <i class="fa-solid fa-x"></i>
-                            </button>
-                            <img src="/assets/remodelacion-vivienda/before/construction-img-005.avif" class="d-block w-100" alt="Construcción" loading="lazy">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade modal-lg" id="sixth-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
-                                <i class="fa-solid fa-x"></i>
-                            </button>
-                            <img src="/assets/remodelacion-vivienda/before/construction-img-006.avif" class="d-block w-100" alt="Construcción" loading="lazy">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade modal-lg" id="seventh-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
-                                <i class="fa-solid fa-x"></i>
-                            </button>
-                            <img src="/assets/remodelacion-vivienda/before/construction-img-007.avif" class="d-block w-100" alt="Construcción" loading="lazy">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade modal-lg" id="eighth-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
-                                <i class="fa-solid fa-x"></i>
-                            </button>
-                            <img src="/assets/remodelacion-vivienda/before/construction-img-008.avif" class="d-block w-100" alt="Construcción" loading="lazy">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade modal-lg" id="ninth-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
-                                <i class="fa-solid fa-x"></i>
-                            </button>
-                            <img src="/assets/remodelacion-vivienda/before/construction-img-009.avif" class="d-block w-100" alt="Construcción" loading="lazy">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade modal-lg" id="tenth-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
-                                <i class="fa-solid fa-x"></i>
-                            </button>
-                            <img src="/assets/remodelacion-vivienda/before/construction-img-010.avif" class="d-block w-100" alt="Construcción" loading="lazy">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade modal-lg" id="eleventh-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
-                                <i class="fa-solid fa-x"></i>
-                            </button>
-                            <img src="/assets/remodelacion-vivienda/before/construction-img-011.avif" class="d-block w-100" alt="Construcción" loading="lazy">
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
             <div class="modal fade modal-lg" id="twelfth-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
@@ -962,11 +898,12 @@
                             <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
                                 <i class="fa-solid fa-x"></i>
                             </button>
-                            <img src="/assets/remodelacion-vivienda/before/construction-img-012.avif" class="d-block w-100" alt="Construcción" loading="lazy">
+                            <img src="/assets/remodelacion-vivienda/before/construction-img-012.avif" class="d-block w-100" alt="Construcción">
                         </div>
                     </div>
                 </div>
             </div>
+            
             <div class="modal fade modal-lg" id="thirteenth-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
@@ -974,16 +911,420 @@
                             <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
                                 <i class="fa-solid fa-x"></i>
                             </button>
-                            <img src="/assets/remodelacion-vivienda/before/construction-img-013.avif" class="d-block w-100" alt="Construcción" loading="lazy">
+                            <img src="/assets/remodelacion-vivienda/before/construction-img-013.avif" class="d-block w-100" alt="Construcción">
                         </div>
                     </div>
                 </div>
             </div>
-        </section> -->
+            
+            <div class="modal fade modal-lg" id="fourteenth-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                                <i class="fa-solid fa-x"></i>
+                            </button>
+                            <img src="/assets/remodelacion-vivienda/before/construction-img-014.avif" class="d-block w-100" alt="Construcción">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal fade modal-lg" id="fifteenth-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                                <i class="fa-solid fa-x"></i>
+                            </button>
+                            <img src="/assets/remodelacion-vivienda/before/construction-img-015.avif" class="d-block w-100" alt="Construcción">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal fade modal-lg" id="sixteenth-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                                <i class="fa-solid fa-x"></i>
+                            </button>
+                            <img src="/assets/remodelacion-vivienda/before/construction-img-016.avif" class="d-block w-100" alt="Construcción">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal fade modal-lg" id="seventeenth-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                                <i class="fa-solid fa-x"></i>
+                            </button>
+                            <img src="/assets/remodelacion-vivienda/before/construction-img-017.avif" class="d-block w-100" alt="Construcción">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal fade modal-lg" id="eighteenth-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                                <i class="fa-solid fa-x"></i>
+                            </button>
+                            <img src="/assets/remodelacion-vivienda/before/construction-img-018.avif" class="d-block w-100" alt="Construcción">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal fade modal-lg" id="nineteenth-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                                <i class="fa-solid fa-x"></i>
+                            </button>
+                            <img src="/assets/remodelacion-vivienda/before/construction-img-019.avif" class="d-block w-100" alt="Construcción">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal fade modal-lg" id="twentieth-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                                <i class="fa-solid fa-x"></i>
+                            </button>
+                            <img src="/assets/remodelacion-vivienda/before/construction-img-020.avif" class="d-block w-100" alt="Construcción">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal fade modal-lg" id="twentyfirst-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                                <i class="fa-solid fa-x"></i>
+                            </button>
+                            <img src="/assets/remodelacion-vivienda/before/construction-img-021.avif" class="d-block w-100" alt="Construcción">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal fade modal-lg" id="twentysecond-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                                <i class="fa-solid fa-x"></i>
+                            </button>
+                            <img src="/assets/remodelacion-vivienda/before/construction-img-022.avif" class="d-block w-100" alt="Construcción">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal fade modal-lg" id="twentythird-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                                <i class="fa-solid fa-x"></i>
+                            </button>
+                            <img src="/assets/remodelacion-vivienda/before/construction-img-023.avif" class="d-block w-100" alt="Construcción">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal fade modal-lg" id="twentyfourth-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                                <i class="fa-solid fa-x"></i>
+                            </button>
+                            <img src="/assets/remodelacion-vivienda/before/construction-img-024.avif" class="d-block w-100" alt="Construcción">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal fade modal-lg" id="twentyfifth-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                                <i class="fa-solid fa-x"></i>
+                            </button>
+                            <img src="/assets/remodelacion-vivienda/before/construction-img-025.avif" class="d-block w-100" alt="Construcción">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal fade modal-lg" id="twentysixth-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                                <i class="fa-solid fa-x"></i>
+                            </button>
+                            <img src="/assets/remodelacion-vivienda/before/construction-img-026.avif" class="d-block w-100" alt="Construcción">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal fade modal-lg" id="twentyseventh-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                                <i class="fa-solid fa-x"></i>
+                            </button>
+                            <img src="/assets/remodelacion-vivienda/before/construction-img-027.avif" class="d-block w-100" alt="Construcción">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal fade modal-lg" id="twentyeighth-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                                <i class="fa-solid fa-x"></i>
+                            </button>
+                            <img src="/assets/remodelacion-vivienda/before/construction-img-028.avif" class="d-block w-100" alt="Construcción">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal fade modal-lg" id="twentyninth-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                                <i class="fa-solid fa-x"></i>
+                            </button>
+                            <img src="/assets/remodelacion-vivienda/before/construction-img-029.avif" class="d-block w-100" alt="Construcción">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal fade modal-lg" id="thirtieth-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                                <i class="fa-solid fa-x"></i>
+                            </button>
+                            <img src="/assets/remodelacion-vivienda/before/construction-img-030.avif" class="d-block w-100" alt="Construcción">
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            
+            <div class="modal fade modal-lg" id="thirtyfirst-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                                <i class="fa-solid fa-x"></i>
+                            </button>
+                            <img src="/assets/remodelacion-vivienda/before/construction-img-031.avif" class="d-block w-100" alt="Construcción">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal fade modal-lg" id="thirtysecond-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                                <i class="fa-solid fa-x"></i>
+                            </button>
+                            <img src="/assets/remodelacion-vivienda/before/construction-img-032.avif" class="d-block w-100" alt="Construcción">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal fade modal-lg" id="thirtythird-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                                <i class="fa-solid fa-x"></i>
+                            </button>
+                            <img src="/assets/remodelacion-vivienda/before/construction-img-033.avif" class="d-block w-100" alt="Construcción">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal fade modal-lg" id="thirtyfourth-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                                <i class="fa-solid fa-x"></i>
+                            </button>
+                            <img src="/assets/remodelacion-vivienda/before/construction-img-034.avif" class="d-block w-100" alt="Construcción">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal fade modal-lg" id="thirtyfifth-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                                <i class="fa-solid fa-x"></i>
+                            </button>
+                            <img src="/assets/remodelacion-vivienda/before/construction-img-035.avif" class="d-block w-100" alt="Construcción">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal fade modal-lg" id="thirtysixth-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                                <i class="fa-solid fa-x"></i>
+                            </button>
+                            <img src="/assets/remodelacion-vivienda/before/construction-img-036.avif" class="d-block w-100" alt="Construcción">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal fade modal-lg" id="thirtyseventh-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                                <i class="fa-solid fa-x"></i>
+                            </button>
+                            <img src="/assets/remodelacion-vivienda/before/construction-img-037.avif" class="d-block w-100" alt="Construcción">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal fade modal-lg" id="thirtyeighth-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                                <i class="fa-solid fa-x"></i>
+                            </button>
+                            <img src="/assets/remodelacion-vivienda/before/construction-img-038.avif" class="d-block w-100" alt="Construcción">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal fade modal-lg" id="thirtyninth-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                                <i class="fa-solid fa-x"></i>
+                            </button>
+                            <img src="/assets/remodelacion-vivienda/before/construction-img-039.avif" class="d-block w-100" alt="Construcción">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade modal-lg" id="fortieth-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                                <i class="fa-solid fa-x"></i>
+                            </button>
+                            <img src="/assets/remodelacion-vivienda/before/construction-img-040.avif" class="d-block w-100" alt="Construcción">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal fade modal-lg" id="fortyfirst-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                                <i class="fa-solid fa-x"></i>
+                            </button>
+                            <img src="/assets/remodelacion-vivienda/before/construction-img-041.avif" class="d-block w-100" alt="Construcción">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal fade modal-lg" id="fortysecond-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                                <i class="fa-solid fa-x"></i>
+                            </button>
+                            <img src="/assets/remodelacion-vivienda/before/construction-img-042.avif" class="d-block w-100" alt="Construcción">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal fade modal-lg" id="fortythird-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                                <i class="fa-solid fa-x"></i>
+                            </button>
+                            <img src="/assets/remodelacion-vivienda/before/construction-img-043.avif" class="d-block w-100" alt="Construcción">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal fade modal-lg" id="fortyfourth-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                                <i class="fa-solid fa-x"></i>
+                            </button>
+                            <img src="/assets/remodelacion-vivienda/before/construction-img-044.avif" class="d-block w-100" alt="Construcción">
+                        </div>
+                    </div>
+                </div>
+            </div>         
+            
+        </section>
 
         <section class="fotographies fotographies-desktop">
             <h2>¡Y así quedó el trabajo!<h2>
-            <div class="glider">
+            <div class="glider" id="glider-after">
                 <div class="glider-container jobs-container-desktop">
                     <button aria-label="Anterior" class="glider-prev">
                         <i class="fa-solid fa-arrow-left"></i>
@@ -995,7 +1336,6 @@
                                 <img data-src="/assets/remodelacion-vivienda/after/construction-img-001.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
                             </div>
                         </a>
-
                         <a href="#second-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
                             <div class="job-img">
                                 <div class="loader"></div>
@@ -1014,13 +1354,6 @@
                             <div class="job-img">
                                 <div class="loader"></div>
                                 <img data-src="/assets/remodelacion-vivienda/after/construction-img-004.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                            </div>
-                        </a>
-
-                        <a href="#fifth-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
-                            <div class="job-img">
-                                <div class="loader"></div>
-                                <img data-src="/assets/remodelacion-vivienda/after/construction-img-005.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
                             </div>
                         </a>
 
@@ -1057,13 +1390,6 @@
                             <div class="job-img">
                                 <div class="loader"></div>
                                 <img data-src="/assets/remodelacion-vivienda/after/construction-img-010.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
-                            </div>
-                        </a>
-
-                        <a href="#eleventh-image" class="glider-element btn btn-primary" data-bs-toggle="modal">
-                            <div class="job-img">
-                                <div class="loader"></div>
-                                <img data-src="/assets/remodelacion-vivienda/after/construction-img-011.avif" class="d-block w-100 lazy-image" alt="Construcción" loading="lazy">
                             </div>
                         </a>
 
@@ -1136,18 +1462,6 @@
                     </div>
                 </div>
             </div>
-            <div class="modal fade modal-lg" id="fifth-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
-                                <i class="fa-solid fa-x"></i>
-                            </button>
-                            <img src="/assets/remodelacion-vivienda/after/construction-img-005.avif" class="d-block w-100" alt="Construcción" loading="lazy">
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="modal fade modal-lg" id="sixth-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
@@ -1204,18 +1518,6 @@
                                 <i class="fa-solid fa-x"></i>
                             </button>
                             <img src="/assets/remodelacion-vivienda/after/construction-img-010.avif" class="d-block w-100" alt="Construcción" loading="lazy">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade modal-lg" id="eleventh-image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
-                                <i class="fa-solid fa-x"></i>
-                            </button>
-                            <img src="/assets/remodelacion-vivienda/after/construction-img-011.avif" class="d-block w-100" alt="Construcción" loading="lazy">
                         </div>
                     </div>
                 </div>
